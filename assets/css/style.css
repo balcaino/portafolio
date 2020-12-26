@@ -1,2 +1,20 @@
 /**font-family: 'Bungee Outline', cursive;
 font-family: 'Cabin', sans-serif;**/
+.logo{
+    font-family: 'Bungee Outline', sans-serif;
+    font-size: 30px;
+}
+body{
+    font-family: 'Cabin', sans-serif;
+}
+.nombre{
+    font-family: 'Bungee Outline', sans-serif;
+    font-size: 45px;
+}
+.avatar{
+    width: 15rem;
+}
+.interes{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
