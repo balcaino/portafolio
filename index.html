@@ -36,52 +36,63 @@
                 <a class="nav-link" href="#experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Trabajos</a>
+                <a class="nav-link" href="#trabajos">Trabajos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
             </li>
 
         </ul>
     </div>
 </nav>
-<header class="container col-12 bg-info text-white text-center">
+<!--class="container col-12 bg-info text-white text-center-->
+<header>
+    <div
+    id="intro-example"
+    class="p-5 text-center bg-image"
+    style="background-image: url('assets/img/fondo.png')"
+  >
     <div>
         <!-- Foto Perfil-->
         <img class="avatar" src="assets/img/avatar.png" alt="" />
         <!-- Nombre-->
-        <h1 class="nombre">Boris Alcaíno Valenzuela</h1>
+        <h1 class="nombre text-white text-center">Boris Alcaíno Valenzuela</h1>
         
         <p class="interes text-white text-center">Ingeniero en informatica - Diseño WEB</p>
+        <button  id="enviarCorreo" type="button" class="btn btn-light border  p-2 mr-3" data-toggle ="tooltip" data-placement="bottom" title="Presione para contactarme">Contacto</button>
     </div>
 </header>
 
 <!---SECTION Sobre mi-->
-<section class="container my-5 pt-3" id="sobremi">
-    <h1 class="nombre text-center text-dark">Sobre mi</h1>
+<section class="container my-5 pt-3 d-none d-sm-none d-md-block" id="sobremi">
+    <h1 class="nombre text-center text-danger">Sobre mi</h1>
     <div class="row">
 
         <div class="col-12 col-sm-12 col-md-6">
-            <h4 class="border-bottom border-dark font-weight-bold d-inline-block">Sobre mi</h4>
+            <h4 class="border-bottom border-dark font-weight-bold d-inline-block">Perfil Profesional</h4>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat deleniti error omnis
-                    nisi nulla debitis modi tempora illo eos?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat deleniti error omnis
-                    nisi nulla debitis modi tempora illo eos?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat deleniti error omnis
-                    nisi nulla debitis modi tempora illo eos?</p>
+                <p>Soy profesional titulado el año 2016 en Ingeniería en Informática del Instituto Profesional Duoc uc.</p>
+                <p>Soy capaz de formular y poner en marcha planes informáticos según los objetivos de la empresa a corto, mediano y largo plazo, con amplia destreza en
+                    el manejo de los diferentes sistemas operativos, incluyendo la administración de servidores Windows servers y Linux.
+                </p>
+                <p>Soy una persona comprometida con mi trabajo, tengo ideas innovadoras, me gustan los desafíos y busco nuevos
+                    proyectos; tengo facilidad para relacionarme con las personas, me gusta trabajar en coordinación con las diferentes
+                    jefaturas, no tengo problemas para trabajar bajo presión, me gusta enfrentar los obstáculos que se presentan y mi
+                    misión en todo empleo es llegar a cumplir los objetivos de la empresa y de mi equipo de trabajo</p>
             </div>
 
         </div>
         <div class="col-12 col-sm-12 col-md-6">
-            <h4 class="border-bottom border-dark font-weight-bold d-inline-block">Sobre mi 2</h4>
+            <h4 class="border-bottom border-dark font-weight-bold d-inline-block">Perfil Personal</h4>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat deleniti error omnis
-                    nisi nulla debitis modi tempora illo eos?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat deleniti error omnis
-                    nisi nulla debitis modi tempora illo eos?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat deleniti error omnis
-                    nisi nulla debitis modi tempora illo eos?</p>
+                <p>Tengo 35 años. Me considero una persona alegre, responsable y creativo. Me gustan los desafíos por lo cual me
+                    esfuerzo por lograr mis objetivos.</p>
+                <p>Me gustan los deportes al aire libre, por lo cual siempre disfruto de salir a trotar o de hacer ciclismo. Además
+                    me gusta el futbol, el cual lo practico de manera amateur todas las semanas en un equipo de barrio y equipos de
+                    amigos.</p>
+                <p>Me gusta la música, en especial el rock; me gusta cocinar como pasatiempo.</p>
+                <p>Disfruto de mi familia, vivo junto a mi pareja y mis 2 hij@s, con los cuales comparto gran parte del día de
+                    manera alegre.</p>
             </div>
 
         </div>
@@ -135,12 +146,12 @@
 </section>
 <!--section Experiencia-->
 
-<main class="container-fluid bg-info my-5">
+<main class="container-fluid bg-info my-5" id="experiencia">
     <header>
         <h1 class="text-center text-white nombre">Experiencia</h1>
     </header>
 
-    <section id="experiencia">
+    <section>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card mx-3 mb-5">
@@ -202,12 +213,12 @@
     </section>
 </main>
 <!-- section trabajos-->
-<main class="container-fluid bg-secondary my-5">
+<main class="container-fluid bg-secondary my-5" id="trabajos">
     <header>
         <h1 class="text-center text-white nombre">Mis últimos trabajos</h1>
     </header>
 
-    <section id="trabajos">
+    <section>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card mx-3 mb-5">
@@ -260,7 +271,11 @@
     </section>
 </main>
 <!--Section typeform-->
-<section>
+<section id="contacto">
+    <h1 class="text-center text-primary nombre">Contacto</h1>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/hEdWwmrA?typeform-medium=embed-snippet"
+        style="width: 100%; height: 500px;"></div>
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
 
 </section>
 <!--footer-->
@@ -272,10 +287,10 @@
                 <!-- Footer Redes sociales -->
                 <div class="center">
                     <h4 class="nombre text-white">Mis redes sociales</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://cl.linkedin.com/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/"><i class="fab fa-fw fa-github"></i></a>
                 </div>
                 
                
